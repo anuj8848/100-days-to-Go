@@ -1,9 +1,13 @@
 package main
-import "fmt"
+import ("fmt")
+
 func main(){
-	if 10%5==0{
-		fmt.Println("10 is divisible by 5")
+	var num int
+	fmt.Print("Type a number: ")
+	fmt.Scan(&num)
+	if num%5==0{
+		fmt.Println(num," is divisible by 5")
 	}else {
-		fmt.Println("10 is not divisible by 5")
+		fmt.Println(num," is not divisible by 5")
 	}
 }
