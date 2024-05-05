@@ -14,6 +14,7 @@ func printer(a ...interface{}){
 }
 
 func make_square(a int){
+
 	printer(a*a)
 }
 
@@ -29,12 +30,14 @@ func get_data(a int){
 	pass_to_a(a)
 }
 
-//functions with multiple return values
-func get_16_randoms() ( int, int){
 
-	return rand.IntN(100),rand.IntN(100)
-	
-	
+
+
+
+//functions with multiple return values
+func get_16_randoms(a int) ( int, int){
+	sqr := a*a
+	return rand.IntN(sqr),rand.IntN(sqr)
 }
 
 func main(){
@@ -43,7 +46,7 @@ func main(){
 	getit(&num)
 	get_data(num)
 
-	a,b:=get_16_randoms()
+	a,b:=get_16_randoms(num)
 	printer(a,b)
 
 

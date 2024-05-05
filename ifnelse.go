@@ -11,3 +11,4 @@ func main(){
 		fmt.Println(num," is not divisible by 5")
 	}
 }
+
