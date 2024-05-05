@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func get_input(n ...int){
+	fmt.Println(n)
+}
+
 func main(){
 
 	var a [10]int
@@ -18,5 +22,10 @@ func main(){
 
 	fourth_array:=[...]int{2,5:56,439,11:34}
 	fmt.Println("fourth array: ",fourth_array)
+
+	get_input(1)
+	get_input(1,2,3)
+	get_input(1,2,3,4,5,6,7)
+
 
 }
