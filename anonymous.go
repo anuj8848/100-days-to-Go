@@ -3,10 +3,17 @@ import "fmt"
 
 func subint() func() int{
 	i:=0
-	return func() int{
-		i--
-		return i
-		
+	func() int{
+		func() int{
+			func()int{
+				func() int{
+				 
+					return func() int{
+						return i--
+					}
+				}
+			}
+		}	
 	}
 }
 
