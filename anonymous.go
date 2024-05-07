@@ -2,12 +2,11 @@ package main
 import "fmt"
 
 func subint() func() int{
-	i:=0
 	func() int{
 		func() int{
 			func()int{
 				func() int{
-				 
+				 i:=0
 					return func() int{
 						return i--
 					}
