@@ -1,7 +1,31 @@
 function declaration
+-------------------------------------
 func name(argument) return type {
     statement
 }
 
+
 array declaration
+-----------------------------------------
 var array_name [size]type
+
+
+
+multiple variable function argument
+------------------------------------------
+func name(arg1 ...type) return type{
+
+    //statement
+}
+
+
+getting input from the user
+--------------------------------
+fmt.Scan(&variable_name)
+
+
+for loop
+-------------------------------------------
+for i:-0;condition one;increment/decrement{
+    //statement
+}
