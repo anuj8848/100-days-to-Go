@@ -1,0 +1,7 @@
+function declaration
+func name(argument) return type {
+    statement
+}
+
+array declaration
+var array_name [size]type
