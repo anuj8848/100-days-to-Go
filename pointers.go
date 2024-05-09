@@ -11,8 +11,13 @@ func changevalue(points *int){
 }
 
 func tester(add *int,num int){
-	add=&num
+	*add=num
 
+}
+
+func exchange(n1 *int, n2 *int,nx int, ny int){
+	*n1=ny
+	*n2=nx 
 }
 
 func main(){
@@ -31,8 +36,10 @@ func main(){
 	tester(&a,b)
 	print("a,b: ",a,b)
 
-	
-
-
+	print("----------------------------")
+	x,y:=45,54
+	print("x,y: ",x,y)
+	exchange(&x,&y,x,y)
+	print("x,y: ",x,y)
 
 }
