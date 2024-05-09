@@ -29,3 +29,16 @@ for loop
 for i:-0;condition one;increment/decrement{
     //statement
 }
+
+
+pointers
+-------------------------------------
+
+func change(*int){
+    *int =integer
+}
+func main(){
+    num=43
+    change(&num)
+
+}
