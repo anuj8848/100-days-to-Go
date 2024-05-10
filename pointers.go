@@ -15,9 +15,12 @@ func tester(add *int,num int){
 
 }
 
-func exchange(n1 *int, n2 *int,nx int, ny int){
-	*n1=ny
-	*n2=nx 
+func exchange(n1 *int, n2 *int){
+	*nx:=n1
+	*ny:=n2
+	print(*nx,*ny)
+	// *n1=ny
+	// *n2=nx 
 }
 
 func main(){
@@ -39,7 +42,7 @@ func main(){
 	print("----------------------------")
 	x,y:=45,54
 	print("x,y: ",x,y)
-	exchange(&x,&y,x,y)
+	exchange(&x,&y)
 	print("x,y: ",x,y)
 
 }
