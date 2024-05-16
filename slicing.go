@@ -20,5 +20,12 @@ func main(){
 	s[0]="a"
 	s[1]="b"
 	s[2]="c"
-	pl("emp: ", s,"len: ", len(s), "caps: ",cap(s))
+	pl("set: ", s)
+	pl("get: ", s[2])
+	pl("len: ", len(s))
+
+	s=append(s, "d")
+	s=append(s, "e", "f")
+	pl("app: ", s)
+	
 }
