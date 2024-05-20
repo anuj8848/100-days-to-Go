@@ -7,3 +7,19 @@ A calendar time, also called an absolute time, is a point in the time continuum,
   A time interval is a continuous part of the time continuum between two calendar times;
    for instance the hour between 15:00 and 19:00 on February 20, 2020. An elapsed time is the length
     of an interval, for example, 38 minutes.
+
+
+-----Errors----------------------------
+errors.New constructs a basic error value with the given error message
+
+a NIL value in the rror positions indicates that there is not error
+
+A Sentinel error is predeclared variable that is used to 
+signify a specific error condition
+
+
+it's common to use an inline error check in the if line.
+
+
+errors.Is checks that a given error (or any error in tis chain)
+matches a specific error value. this is especially useful with wrapped or nested errors.
