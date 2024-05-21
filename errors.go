@@ -1,8 +1,8 @@
 package main
 
 import (
-    "errors"
-    "fmt"
+	"errors"
+	"fmt"
 )
 
 func f(arg int) (int, error) {
