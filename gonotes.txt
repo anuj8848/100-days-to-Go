@@ -44,3 +44,23 @@ func main(){
 }
 dfadfasdfadf a;dskfja;dlkf j;taiasd fkadsjf ;
 fadfadfasdf
+
+
+-----defer-------------------------------------
+A defer statement adds the function call following the defer keyword onto a stack.
+ All of the calls on that stack are called when the function in which they were added returns.
+ Because the calls are placed on a stack, they are called in last-in-first-out order.
+ package main
+
+import "fmt"
+
+func main() {
+	defer fmt.Println("Bye")
+	fmt.Println("Hi")
+}
+
+
+Output
+Hi
+Bye
+-------------------------------------------------
